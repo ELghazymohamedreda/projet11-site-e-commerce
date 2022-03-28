@@ -3,7 +3,7 @@ session_start();
 
 // print_r($_SESSION["paniers"]);
 
-include 'gestionProduit.php';
+include 'GestionPanier.php';
 
 $gestionProduit = new GestionProduit();
 
@@ -48,4 +48,4 @@ $listProduits = $gestionProduit->getPanier();
      <a href="index.php">back</a>
 
 
-     
+        

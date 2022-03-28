@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'gestionProduit.php';
+include 'GestionPanier.php';
 $gestionProduit = new GestionProduit();
 
 
