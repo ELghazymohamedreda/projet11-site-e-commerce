@@ -1,3 +1,4 @@
+
 <?php 
 session_start();
 
@@ -20,32 +21,43 @@ $listProduits = $gestionProduit->getPanier();
                 <th>Quantité</th>
                 
              </tr>
+
+             
       
         <?php
+
+        $total= 0;
+        
           foreach($listProduits as $value){
           
-
+            $total =  $total + $value["qnt"] ;
             ?>
           
             <tr >
-                
+            
                 <td><?= $value["id"] ?></td>
                 <td><?= $value["nom"] ?></td>
                 <td><?= $value["prix"] ?> dh</td>
                 <td><?= $value["qnt"] ?></td>
             
+                
+               
+
               
+            
+                
             </tr> 
+            
             
              
         <?php } ?>
-
-
-     </table>
-
-   
-
-     <a href="index.php">back</a>
-
-
+        <td> 🛒 <?= $total ?> </td>
         
+     </table>
+     
+   
+<br>
+     <a href="index.php">Back</a>
+
+
+         
