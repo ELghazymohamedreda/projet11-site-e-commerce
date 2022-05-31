@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'GestionPanier.php';
-$gestionProduit = new GestionProduit();
+$gestionProduit = new GestionProduit(); 
 
 
 
